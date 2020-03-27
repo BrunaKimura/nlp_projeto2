@@ -49,8 +49,9 @@ def buscaid(index, word):
 def teste2(index, texto):
     if not(' ') in texto:
         if not('(') in texto:
-            return texto
-    
+            if texto == "and" or texto == "or":
+                return texto
+            return buscaid(index, texto)
     
     a = sexpr_tokenize(texto)
     if len(a)==1:
@@ -61,28 +62,14 @@ def teste2(index, texto):
         e = re.sub('\)$', '', e)
         e = re.sub('^\(', '', e)
         pilha.append(teste2(index, e))
-    
-    # faz o and e o or na pilha
-    # ['nas', 'and', 'nnn', 'or', 'tas']
-    # ["123", 'and', ['12', '13'], 'or', '14']
-    if type(pilha[0])==str:
-        result = [buscaid(index, pilha[0])]
-    else:
-        result = [pilha[0]]
+
+    result = [pilha[0]]
     for i, word in enumerate(pilha):
         if word == 'and':
-            if type(pilha[i+1])==str:
-                result[0] &= buscaid(index, pilha[i+1])
-                # faz result = result and buscaid(word[i+1])
-            else:
-                result[0] &= pilha[i+1]
+            result[0] &= pilha[i+1]
         if word == 'or':
-            if type(pilha[i+1])==str:
-                # faz result = result or buscaid(word[i+1])
-                result[0] |= buscaid(index, pilha[i+1])
-            else:
-                result[0] |= pilha[i+1]
-    return result
+            result[0] |= pilha[i+1]
+    return result[0]
 
 def main():
     parser = ArgumentParser()
