@@ -46,7 +46,7 @@ def buscaid(index, word):
     
     
 
-def teste2(index, texto):
+def teste2(index, texto, pilha=[]):
     if not(' ') in texto:
         if not('(') in texto:
             if texto == "and" or texto == "or":
@@ -57,11 +57,11 @@ def teste2(index, texto):
     if len(a)==1:
         a = a[0].split()
     # result = True
-    pilha = []
+    
     for e in a:
         e = re.sub('\)$', '', e)
         e = re.sub('^\(', '', e)
-        pilha.append(teste2(index, e))
+        pilha.append(teste2(index, e, pilha))
 
     result = [pilha[0]]
     for i, word in enumerate(pilha):
