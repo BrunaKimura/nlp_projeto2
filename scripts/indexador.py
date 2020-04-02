@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 from collections import defaultdict
 
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 
 
 def create_repo(corpus):
@@ -16,7 +17,20 @@ def create_repo(corpus):
         Um dicionário que mapeia docid para uma lista de tokens.
     '''
     # TODO melhorar tokenizer (tirar stopwords, ver mais coisas)
-    return {docid: word_tokenize(text) for docid, text in corpus.items()}
+    sw = stopwords.words('english')+['.', ',', '\'s', '(', ')', 'n\'t', '``', ';', ':']
+    print(sw)
+    # {docid: word_tokenize(text) for docid, text in corpus.items()}
+    doc_ids={}
+    for docid, text in corpus.items():
+        doc_ids[docid]=[]
+        for word in word_tokenize(text):
+            
+            if word.lower() not in sw:
+                if word.lower() not in doc_ids[docid]:
+                    doc_ids[docid].append(word.lower())
+
+    return doc_ids
+    # return {((docid: word_tokenize(text) )if (word_tokenize(text) not in sw)) for docid, text in corpus.items()}
 
 
 def create_index(repo):
@@ -29,7 +43,7 @@ def create_index(repo):
         O índice reverso do repositorio: um dicionario que mapeia token para
         lista de docids.
     '''
-
+    
     indexed = defaultdict(set)
     for doc_id, words in repo.items():
         for word in words:

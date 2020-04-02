@@ -41,8 +41,8 @@ def buscaid(index, word):
         # docids_list.append(set(docids))
 
     except:
-        print("Nao exite(m) essa(s) palavra(s) no corpus")
-        # break
+        print(f"Nao exite a palavra \'{word}\' no corpus")
+        return set()
     
     
 
@@ -70,6 +70,12 @@ def teste2(index, texto, pilha=[]):
         if word == 'or':
             result[0] |= pilha[i+1]
     return result[0]
+
+# def ranking(corpus, repo, index, docids):
+    # Ranquear os documentos.
+    # for i in 
+
+    # return list(docids)  # dummy por enquanto.
 
 def main():
     parser = ArgumentParser()

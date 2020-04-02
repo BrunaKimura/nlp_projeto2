@@ -1,56 +1,38 @@
 {
-    "ASIAN": [
+    "asian": [
         "test/14826"
     ],
-    "EXPORTERS": [
+    "exporters": [
         "test/14826"
     ],
-    "FEAR": [
+    "fear": [
         "test/14826"
     ],
-    "DAMAGE": [
+    "damage": [
         "test/14826"
     ],
-    "FROM": [
+    "u.s.-japan": [
         "test/14826"
     ],
-    "U.S.-JAPAN": [
+    "rift": [
         "test/14826"
     ],
-    "RIFT": [
-        "test/14826"
-    ],
-    "Mounting": [
+    "mounting": [
         "test/14826"
     ],
     "trade": [
         "test/14832",
+        "test/14829",
         "test/14826"
     ],
     "friction": [
         "test/14826"
     ],
-    "between": [
-        "test/14828",
+    "u.s.": [
         "test/14826"
     ],
-    "the": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "U.S.": [
-        "test/14826"
-    ],
-    "And": [
-        "test/14826"
-    ],
-    "Japan": [
-        "test/14826",
-        "test/14829"
-    ],
-    "has": [
+    "japan": [
+        "test/14829",
         "test/14826"
     ],
     "raised": [
@@ -66,29 +48,13 @@
         "test/14832",
         "test/14826"
     ],
-    "of": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "Asia": [
+    "asia": [
         "test/14826"
-    ],
-    "'s": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
     ],
     "exporting": [
         "test/14826"
     ],
     "nations": [
-        "test/14826"
-    ],
-    "that": [
-        "test/14828",
         "test/14826"
     ],
     "row": [
@@ -106,75 +72,32 @@
     "economic": [
         "test/14826"
     ],
-    "damage": [
-        "test/14826"
-    ],
-    ",": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
     "businessmen": [
         "test/14826"
     ],
-    "and": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
     "officials": [
-        "test/14826",
-        "test/14829"
+        "test/14829",
+        "test/14826"
     ],
     "said": [
         "test/14832",
+        "test/14829",
         "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    ".": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "They": [
-        "test/14826",
-        "test/14829"
+        "test/14826"
     ],
     "told": [
         "test/14826"
     ],
-    "Reuter": [
+    "reuter": [
         "test/14826"
     ],
     "correspondents": [
         "test/14826"
     ],
-    "in": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "Asian": [
-        "test/14826"
-    ],
     "capitals": [
         "test/14826"
     ],
-    "a": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "Move": [
-        "test/14826"
-    ],
-    "against": [
+    "move": [
         "test/14826"
     ],
     "might": [
@@ -192,44 +115,18 @@
     "lead": [
         "test/14826"
     ],
-    "to": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
     "curbs": [
         "test/14826"
     ],
-    "on": [
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "American": [
+    "american": [
         "test/14826"
     ],
     "imports": [
         "test/14832",
         "test/14826"
     ],
-    "their": [
-        "test/14826"
-    ],
     "products": [
         "test/14832",
-        "test/14826"
-    ],
-    "But": [
-        "test/14826"
-    ],
-    "some": [
-        "test/14826"
-    ],
-    "exporters": [
-        "test/14826"
-    ],
-    "while": [
         "test/14826"
     ],
     "conflict": [
@@ -241,42 +138,20 @@
     "hurt": [
         "test/14826"
     ],
-    "them": [
-        "test/14826"
-    ],
     "long-run": [
         "test/14826"
     ],
     "short-term": [
         "test/14826"
     ],
-    "Tokyo": [
+    "tokyo": [
         "test/14826"
     ],
     "loss": [
         "test/14826"
     ],
-    "be": [
-        "test/14826"
-    ],
     "gain": [
         "test/14826"
-    ],
-    "The": [
-        "test/14832",
-        "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "Has": [
-        "test/14826"
-    ],
-    "it": [
-        "test/14826"
-    ],
-    "will": [
-        "test/14826",
-        "test/14829"
     ],
     "impose": [
         "test/14826"
@@ -285,9 +160,9 @@
         "test/14826"
     ],
     "mln": [
+        "test/14829",
         "test/14828",
-        "test/14826",
-        "test/14829"
+        "test/14826"
     ],
     "dlrs": [
         "test/14826"
@@ -295,9 +170,9 @@
     "tariffs": [
         "test/14826"
     ],
-    "Japanese": [
-        "test/14826",
-        "test/14829"
+    "japanese": [
+        "test/14829",
+        "test/14826"
     ],
     "electronics": [
         "test/14826"
@@ -305,7 +180,7 @@
     "goods": [
         "test/14826"
     ],
-    "April": [
+    "april": [
         "test/14826"
     ],
     "17": [
@@ -313,11 +188,6 @@
     ],
     "retaliation": [
         "test/14826"
-    ],
-    "for": [
-        "test/14828",
-        "test/14826",
-        "test/14829"
     ],
     "alleged": [
         "test/14826"
@@ -329,9 +199,6 @@
         "test/14826"
     ],
     "pact": [
-        "test/14826"
-    ],
-    "not": [
         "test/14826"
     ],
     "sell": [
@@ -346,16 +213,10 @@
     "markets": [
         "test/14826"
     ],
-    "at": [
-        "test/14826"
-    ],
-    "below": [
-        "test/14826"
-    ],
     "cost": [
         "test/14826"
     ],
-    "Unofficial": [
+    "unofficial": [
         "test/14826"
     ],
     "estimates": [
@@ -383,10 +244,6 @@
     "firms": [
         "test/14826"
     ],
-    "they": [
-        "test/14826",
-        "test/14829"
-    ],
     "virtually": [
         "test/14826"
     ],
@@ -400,29 +257,13 @@
     "hit": [
         "test/14826"
     ],
-    "by": [
-        "test/14826",
-        "test/14829"
-    ],
     "new": [
         "test/14826"
     ],
     "taxes": [
         "test/14826"
     ],
-    "``": [
-        "test/14826"
-    ],
-    "We": [
-        "test/14826"
-    ],
-    "n't": [
-        "test/14826"
-    ],
     "able": [
-        "test/14826"
-    ],
-    "do": [
         "test/14826"
     ],
     "business": [
@@ -441,19 +282,20 @@
     "firm": [
         "test/14826"
     ],
-    "Matsushita": [
+    "matsushita": [
         "test/14826"
     ],
-    "Electric": [
+    "electric": [
+        "test/14829",
         "test/14826"
     ],
-    "Industrial": [
+    "industrial": [
         "test/14826"
     ],
-    "Co": [
+    "co": [
         "test/14826"
     ],
-    "Ltd": [
+    "ltd": [
         "test/14826"
     ],
     "&": [
@@ -462,25 +304,16 @@
     "lt": [
         "test/14826"
     ],
-    ";": [
-        "test/14826"
-    ],
-    "MC.T": [
+    "mc.t": [
         "test/14826"
     ],
     ">": [
-        "test/14826"
-    ],
-    "If": [
         "test/14826"
     ],
     "remain": [
         "test/14826"
     ],
     "place": [
-        "test/14826"
-    ],
-    "any": [
         "test/14826"
     ],
     "length": [
@@ -490,9 +323,6 @@
         "test/14826"
     ],
     "beyond": [
-        "test/14826"
-    ],
-    "few": [
         "test/14826"
     ],
     "months": [
@@ -507,21 +337,13 @@
     "erosion": [
         "test/14826"
     ],
-    "(": [
-        "test/14826",
-        "test/14829"
-    ],
     "subject": [
         "test/14826"
     ],
-    ")": [
-        "test/14826",
-        "test/14829"
-    ],
-    "Tom": [
+    "tom": [
         "test/14826"
     ],
-    "Murtha": [
+    "murtha": [
         "test/14826"
     ],
     "stock": [
@@ -536,26 +358,19 @@
     "broker": [
         "test/14826"
     ],
-    "James": [
+    "james": [
         "test/14826"
     ],
-    "Capel": [
+    "capel": [
         "test/14826"
     ],
-    "In": [
-        "test/14826"
-    ],
-    "Taiwan": [
-        "test/14826"
-    ],
-    "are": [
-        "test/14828",
+    "taiwan": [
         "test/14826"
     ],
     "also": [
+        "test/14829",
         "test/14828",
-        "test/14826",
-        "test/14829"
+        "test/14826"
     ],
     "worried": [
         "test/14826"
@@ -566,19 +381,13 @@
     "seriousness": [
         "test/14826"
     ],
-    "U.S": [
+    "u.s": [
         "test/14826"
     ],
-    "Threat": [
-        "test/14826"
-    ],
-    "because": [
+    "threat": [
         "test/14826"
     ],
     "serves": [
-        "test/14826"
-    ],
-    "as": [
         "test/14826"
     ],
     "warning": [
@@ -590,23 +399,16 @@
     "senior": [
         "test/14826"
     ],
-    "Taiwanese": [
+    "taiwanese": [
         "test/14826"
     ],
     "official": [
-        "test/14826"
-    ],
-    "who": [
         "test/14826"
     ],
     "asked": [
         "test/14826"
     ],
     "named": [
-        "test/14826"
-    ],
-    "had": [
-        "test/14828",
         "test/14826"
     ],
     "surplus": [
@@ -620,20 +422,17 @@
     ],
     "year": [
         "test/14832",
+        "test/14829",
         "test/14828",
-        "test/14826",
-        "test/14829"
+        "test/14826"
     ],
     "95": [
         "test/14826"
     ],
     "pct": [
         "test/14832",
+        "test/14829",
         "test/14828",
-        "test/14826",
-        "test/14829"
-    ],
-    "with": [
         "test/14826"
     ],
     "helped": [
@@ -666,9 +465,6 @@
     "open": [
         "test/14826"
     ],
-    "our": [
-        "test/14826"
-    ],
     "remove": [
         "test/14826"
     ],
@@ -685,16 +481,6 @@
     "allow": [
         "test/14826"
     ],
-    "Products": [
-        "test/14832",
-        "test/14826"
-    ],
-    "if": [
-        "test/14826"
-    ],
-    "we": [
-        "test/14826"
-    ],
     "want": [
         "test/14826"
     ],
@@ -704,21 +490,13 @@
     "problems": [
         "test/14826"
     ],
-    "from": [
-        "test/14832",
-        "test/14826",
-        "test/14829"
-    ],
     "possible": [
         "test/14826"
     ],
-    "Retaliation": [
+    "paul": [
         "test/14826"
     ],
-    "Paul": [
-        "test/14826"
-    ],
-    "Sheen": [
+    "sheen": [
         "test/14826"
     ],
     "chairman": [
@@ -727,20 +505,16 @@
     "textile": [
         "test/14826"
     ],
-    "Safe": [
+    "safe": [
         "test/14826"
     ],
-    "Group": [
+    "group": [
         "test/14826"
     ],
-    "A": [
-        "test/14828",
+    "south": [
         "test/14826"
     ],
-    "South": [
-        "test/14826"
-    ],
-    "Korea": [
+    "korea": [
         "test/14826"
     ],
     "promotion": [
@@ -765,16 +539,7 @@
     "similar": [
         "test/14826"
     ],
-    "those": [
-        "test/14826"
-    ],
-    "Last": [
-        "test/14826"
-    ],
     "7.1": [
-        "test/14826"
-    ],
-    "Up": [
         "test/14826"
     ],
     "4.9": [
@@ -783,7 +548,7 @@
     "1985": [
         "test/14826"
     ],
-    "Malaysia": [
+    "malaysia": [
         "test/14826"
     ],
     "officers": [
@@ -810,22 +575,13 @@
     "sales": [
         "test/14826"
     ],
-    "Hong": [
+    "hong": [
         "test/14826"
     ],
-    "Kong": [
-        "test/14826"
-    ],
-    "where": [
+    "kong": [
         "test/14826"
     ],
     "newspapers": [
-        "test/14826"
-    ],
-    "have": [
-        "test/14826"
-    ],
-    "been": [
         "test/14826"
     ],
     "selling": [
@@ -843,12 +599,6 @@
     "view": [
         "test/14826"
     ],
-    "other": [
-        "test/14826"
-    ],
-    "such": [
-        "test/14826"
-    ],
     "commercial": [
         "test/14826"
     ],
@@ -858,41 +608,24 @@
     "outweighed": [
         "test/14826"
     ],
-    "further": [
-        "test/14828",
-        "test/14826"
-    ],
-    "Pressure": [
-        "test/14826"
-    ],
     "block": [
         "test/14826"
     ],
-    "That": [
+    "lawrence": [
         "test/14826"
     ],
-    "is": [
-        "test/14826",
-        "test/14829"
-    ],
-    "very": [
-        "test/14826"
-    ],
-    "Lawrence": [
-        "test/14826"
-    ],
-    "Mills": [
+    "mills": [
         "test/14826"
     ],
     "director-general": [
         "test/14826"
     ],
-    "Federation": [
+    "federation": [
         "test/14826"
     ],
-    "Industry": [
-        "test/14826",
-        "test/14829"
+    "industry": [
+        "test/14829",
+        "test/14826"
     ],
     "whole": [
         "test/14826"
@@ -913,13 +646,10 @@
         "test/14826"
     ],
     "sources": [
-        "test/14826",
-        "test/14829"
-    ],
-    "Much": [
+        "test/14829",
         "test/14826"
     ],
-    "more": [
+    "much": [
         "test/14826"
     ],
     "serious": [
@@ -932,13 +662,6 @@
         "test/14826"
     ],
     "restraining": [
-        "test/14826"
-    ],
-    "he": [
-        "test/14826"
-    ],
-    "was": [
-        "test/14832",
         "test/14826"
     ],
     "biggest": [
@@ -954,9 +677,6 @@
     "accounting": [
         "test/14826"
     ],
-    "over": [
-        "test/14826"
-    ],
     "30": [
         "test/14828",
         "test/14826"
@@ -967,7 +687,7 @@
     "produced": [
         "test/14826"
     ],
-    "Australian": [
+    "australian": [
         "test/14826"
     ],
     "government": [
@@ -989,22 +709,19 @@
     "concern": [
         "test/14826"
     ],
-    "Minister": [
+    "minister": [
         "test/14826"
     ],
-    "John": [
+    "john": [
         "test/14826"
     ],
-    "Button": [
+    "button": [
         "test/14826"
     ],
-    "Canberra": [
+    "canberra": [
         "test/14826"
     ],
-    "Friday": [
-        "test/14826"
-    ],
-    "This": [
+    "friday": [
         "test/14826"
     ],
     "kind": [
@@ -1019,25 +736,16 @@
     "two": [
         "test/14826"
     ],
-    "which": [
-        "test/14826"
-    ],
     "trading": [
         "test/14826"
     ],
     "partners": [
         "test/14826"
     ],
-    "ours": [
-        "test/14826"
-    ],
     "matter": [
         "test/14826"
     ],
-    "He": [
-        "test/14826"
-    ],
-    "Australia": [
+    "australia": [
         "test/14826"
     ],
     "concerns": [
@@ -1047,8 +755,8 @@
         "test/14826"
     ],
     "coal": [
-        "test/14826",
-        "test/14829"
+        "test/14829",
+        "test/14826"
     ],
     "beef": [
         "test/14826"
@@ -1056,17 +764,14 @@
     "significant": [
         "test/14826"
     ],
-    "Exports": [
-        "test/14826"
-    ],
     "country": [
         "test/14832",
         "test/14826"
     ],
-    "Meanwhile": [
+    "meanwhile": [
         "test/14826"
     ],
-    "U.S.-Japanese": [
+    "u.s.-japanese": [
         "test/14826"
     ],
     "diplomatic": [
@@ -1087,13 +792,13 @@
     "ruling": [
         "test/14826"
     ],
-    "Liberal": [
+    "liberal": [
         "test/14826"
     ],
-    "Democratic": [
+    "democratic": [
         "test/14826"
     ],
-    "Party": [
+    "party": [
         "test/14826"
     ],
     "yesterday": [
@@ -1154,10 +859,6 @@
     "stepped-up": [
         "test/14826"
     ],
-    "an": [
-        "test/14826",
-        "test/14829"
-    ],
     "emergency": [
         "test/14826"
     ],
@@ -1170,21 +871,21 @@
     "despite": [
         "test/14826"
     ],
-    "Prime": [
+    "prime": [
         "test/14826"
     ],
-    "Yasuhiro": [
+    "yasuhiro": [
         "test/14826"
     ],
-    "Nakasone": [
+    "nakasone": [
         "test/14826"
     ],
     "avowed": [
         "test/14826"
     ],
     "fiscal": [
-        "test/14826",
-        "test/14829"
+        "test/14829",
+        "test/14826"
     ],
     "reform": [
         "test/14826"
@@ -1192,55 +893,41 @@
     "program": [
         "test/14826"
     ],
-    "Deputy": [
-        "test/14826"
-    ],
-    "Trade": [
-        "test/14826",
-        "test/14829"
-    ],
-    "Representative": [
-        "test/14826"
-    ],
-    "Michael": [
-        "test/14826"
-    ],
-    "Smith": [
-        "test/14826"
-    ],
-    "Makoto": [
-        "test/14826"
-    ],
-    "Kuroda": [
-        "test/14826"
-    ],
     "deputy": [
         "test/14826"
     ],
-    "minister": [
+    "representative": [
         "test/14826"
     ],
-    "International": [
-        "test/14826",
-        "test/14829"
+    "michael": [
+        "test/14826"
     ],
-    "MITI": [
-        "test/14826",
-        "test/14829"
+    "smith": [
+        "test/14826"
+    ],
+    "makoto": [
+        "test/14826"
+    ],
+    "kuroda": [
+        "test/14826"
+    ],
+    "international": [
+        "test/14829",
+        "test/14826"
+    ],
+    "miti": [
+        "test/14829",
+        "test/14826"
     ],
     "due": [
         "test/14832",
         "test/14826"
     ],
     "meet": [
-        "test/14826",
-        "test/14829"
-    ],
-    "Washington": [
+        "test/14829",
         "test/14826"
     ],
-    "this": [
-        "test/14832",
+    "washington": [
         "test/14826"
     ],
     "week": [
@@ -1252,31 +939,28 @@
     "end": [
         "test/14826"
     ],
-    "CHINA": [
+    "china": [
         "test/14828"
     ],
-    "DAILY": [
+    "daily": [
         "test/14828"
     ],
-    "SAYS": [
+    "says": [
         "test/14828"
     ],
-    "VERMIN": [
+    "vermin": [
         "test/14828"
     ],
-    "EAT": [
+    "eat": [
         "test/14828"
     ],
     "7-12": [
         "test/14828"
     ],
-    "PCT": [
+    "grain": [
         "test/14828"
     ],
-    "GRAIN": [
-        "test/14828"
-    ],
-    "STOCKS": [
+    "stocks": [
         "test/14828"
     ],
     "survey": [
@@ -1298,41 +982,16 @@
     "showed": [
         "test/14828"
     ],
-    "vermin": [
-        "test/14828"
-    ],
     "consume": [
         "test/14828"
     ],
     "12": [
         "test/14828"
     ],
-    "China": [
-        "test/14828"
-    ],
-    "grain": [
-        "test/14828"
-    ],
-    "stocks": [
-        "test/14828"
-    ],
-    "Daily": [
-        "test/14828"
-    ],
-    "It": [
-        "test/14832",
-        "test/14828"
-    ],
-    "each": [
-        "test/14828"
-    ],
     "1.575": [
         "test/14828"
     ],
     "tonnes": [
-        "test/14828"
-    ],
-    "or": [
         "test/14828"
     ],
     "25": [
@@ -1353,14 +1012,6 @@
     "2.1": [
         "test/14832",
         "test/14828"
-    ],
-    "up": [
-        "test/14832",
-        "test/14828"
-    ],
-    "its": [
-        "test/14828",
-        "test/14829"
     ],
     "vegetables": [
         "test/14828"
@@ -1423,35 +1074,8 @@
     "gave": [
         "test/14828"
     ],
-    "no": [
-        "test/14828"
-    ],
     "details": [
         "test/14828"
-    ],
-    "JAPAN": [
-        "test/14829"
-    ],
-    "TO": [
-        "test/14829"
-    ],
-    "REVISE": [
-        "test/14829"
-    ],
-    "LONG-TERM": [
-        "test/14829"
-    ],
-    "ENERGY": [
-        "test/14829"
-    ],
-    "DEMAND": [
-        "test/14829"
-    ],
-    "DOWNWARDS": [
-        "test/14829"
-    ],
-    "Ministry": [
-        "test/14829"
     ],
     "revise": [
         "test/14829"
@@ -1462,25 +1086,28 @@
     "energy": [
         "test/14829"
     ],
+    "demand": [
+        "test/14829"
+    ],
+    "downwards": [
+        "test/14829"
+    ],
+    "ministry": [
+        "test/14829"
+    ],
     "supply/demand": [
         "test/14829"
     ],
     "outlook": [
         "test/14829"
     ],
-    "August": [
+    "august": [
         "test/14829"
     ],
     "forecast": [
         "test/14829"
     ],
     "downtrend": [
-        "test/14829"
-    ],
-    "demand": [
-        "test/14829"
-    ],
-    "ministry": [
         "test/14829"
     ],
     "expected": [
@@ -1530,9 +1157,6 @@
     "changes": [
         "test/14829"
     ],
-    "industry": [
-        "test/14829"
-    ],
     "following": [
         "test/14829"
     ],
@@ -1551,9 +1175,6 @@
     "domestic": [
         "test/14829"
     ],
-    "electric": [
-        "test/14829"
-    ],
     "power": [
         "test/14829"
     ],
@@ -1563,13 +1184,7 @@
     "work": [
         "test/14829"
     ],
-    "out": [
-        "test/14829"
-    ],
     "revised": [
-        "test/14829"
-    ],
-    "through": [
         "test/14829"
     ],
     "deliberations": [
@@ -1581,16 +1196,13 @@
     "meetings": [
         "test/14829"
     ],
-    "Agency": [
+    "agency": [
         "test/14829"
     ],
-    "Natural": [
+    "natural": [
         "test/14829"
     ],
-    "Resources": [
-        "test/14829"
-    ],
-    "Energy": [
+    "resources": [
         "test/14829"
     ],
     "review": [
@@ -1613,13 +1225,7 @@
     "nuclear": [
         "test/14829"
     ],
-    "natural": [
-        "test/14829"
-    ],
     "gas": [
-        "test/14829"
-    ],
-    "Nuclear": [
         "test/14829"
     ],
     "provided": [
@@ -1631,7 +1237,7 @@
     "ended": [
         "test/14829"
     ],
-    "March": [
+    "march": [
         "test/14829"
     ],
     "31": [
@@ -1669,31 +1275,19 @@
     "noted": [
         "test/14829"
     ],
-    "THAI": [
-        "test/14832"
-    ],
-    "TRADE": [
-        "test/14832"
-    ],
-    "DEFICIT": [
-        "test/14832"
-    ],
-    "WIDENS": [
-        "test/14832"
-    ],
-    "IN": [
-        "test/14832"
-    ],
-    "FIRST": [
-        "test/14832"
-    ],
-    "QUARTER": [
-        "test/14832"
-    ],
-    "Thailand": [
+    "thai": [
         "test/14832"
     ],
     "deficit": [
+        "test/14832"
+    ],
+    "widens": [
+        "test/14832"
+    ],
+    "quarter": [
+        "test/14832"
+    ],
+    "thailand": [
         "test/14832"
     ],
     "widened": [
@@ -1705,25 +1299,19 @@
     "baht": [
         "test/14832"
     ],
-    "quarter": [
-        "test/14832"
-    ],
     "1987": [
         "test/14832"
     ],
     "ago": [
         "test/14832"
     ],
-    "Business": [
+    "economics": [
         "test/14832"
     ],
-    "Economics": [
+    "department": [
         "test/14832"
     ],
-    "Department": [
-        "test/14832"
-    ],
-    "Janunary/March": [
+    "janunary/march": [
         "test/14832"
     ],
     "rose": [
@@ -1765,9 +1353,6 @@
     "prices": [
         "test/14832"
     ],
-    "department": [
-        "test/14832"
-    ],
     "expanded": [
         "test/14832"
     ],
@@ -1777,16 +1362,10 @@
     "56.6": [
         "test/14832"
     ],
-    "Export": [
-        "test/14832"
-    ],
     "growth": [
         "test/14832"
     ],
     "smaller": [
-        "test/14832"
-    ],
-    "than": [
         "test/14832"
     ],
     "earnings": [
@@ -1835,9 +1414,6 @@
         "test/14832"
     ],
     "high": [
-        "test/14832"
-    ],
-    "were": [
         "test/14832"
     ],
     "jewellery": [
