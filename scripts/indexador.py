@@ -16,10 +16,9 @@ def create_repo(corpus):
     Returns:
         Um dicionário que mapeia docid para uma lista de tokens.
     '''
-    # TODO melhorar tokenizer (tirar stopwords, ver mais coisas)
+
     sw = stopwords.words('english')+['.', ',', '\'s', '(', ')', 'n\'t', '``', ';', ':']
     print(sw)
-    # {docid: word_tokenize(text) for docid, text in corpus.items()}
     doc_ids={}
     for docid, text in corpus.items():
         doc_ids[docid]=[]
@@ -30,7 +29,6 @@ def create_repo(corpus):
                     doc_ids[docid].append(word.lower())
 
     return doc_ids
-    # return {((docid: word_tokenize(text) )if (word_tokenize(text) not in sw)) for docid, text in corpus.items()}
 
 
 def create_index(repo):
