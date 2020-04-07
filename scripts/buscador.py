@@ -7,43 +7,19 @@ from nltk.text import TextCollection
 from nltk.corpus import reuters
 from collections import Counter
 
-
-def busca(index, repo, corpus, word):
-    # Parsing da query.
-    # "banana apple" => "banana" and "apple"
-    # Recuperar os ids de documento que contem todos os termos da query.
-    # words = word_tokenize(query)
-    # words = ["the", ]
-    print(words)
-    
-    docids_list = []
-    
-    # for word in words:
-    try:
-        docids = index[word] 
-        docids_list.append(set(docids))
-
-    except:
-        print("Nao exite(m) essa(s) palavra(s) no corpus")
-        # break
-    
-    res = docids_list[0]
-    # TODO adicionar para OR tambem
-    for docid in docids_list:
-        res &= docid
-    return res
-
-    # (banana apple) grape => (banana OR apple) AND grape
-    
-    # Retornar os textos destes documentos.
-    # return [corpus[docid] for docid in docids]
 '''     
 https://norvig.com/spell-correct.html
 '''
 
 def words(text): return re.findall(r'\w+', text.lower())
 
-WORDS = Counter(words(open('big.txt').read())) #### o que é esse big?????
+with open('corpus_reuters.json', 'r') as file:
+    corpus = json.load(file)
+big = ''
+for v in corpus.values():
+    big += v
+
+WORDS = Counter(words(big))
 
 def P(word, N=sum(WORDS.values())): 
     "Probability of `word`."
@@ -76,45 +52,66 @@ def edits2(word):
     return (e2 for e1 in edits1(word) for e2 in edits1(e1))
 
 '''
-     ------------------ 
+------------------------------------------- 
 '''
 
 def spell_check(word):
+    '''Checa erros na escrita de uma palavra
+
+    Args:
+        word: palavra a ser buscada
+    
+    Returns:
+        Possivel palavra depois de correção
+    '''
     c = correction(word)
-    if c:
-        return 'tente buscar por:' + c
-    else:
-        return ''
+    return 'tente buscar por:' + c
 
 def buscaid(index, word):
+    '''Busca os índices dos documentos onde a palavra (word) aparece
+
+    Args:
+        index: dicionário que associa cada palavra do corpus com os documentos 
+               em que ela aparece
+        word: palavraa ser buscada
+    
+    Returns:
+        Dicionario com os docids que possuem a palavra, caso não exista a palavra, 
+        retorna uma mensagem contendo uma sugestão de busca
+    '''
     try:
         docids = index[word] 
         return set(docids)
-        # docids_list.append(set(docids))
-
     except:
         res = spell_check(word)
-        raise Exception(f"Nao exite a palavra \'{word}\' no index, , {res}")
+        raise Exception(f"Nao exite a palavra \'{word}\' no index, tente buscar por {res}")
     
 
-palavras = []
-def teste2(index, texto, pilha=[]):
+def busca(index, texto, pilha=[]):
+    '''Busca os textos de acordo com a query
+
+    Args:
+        index: dicionário que associa cada palavra do corpus com os documentos em que ela aparece
+        texto: query de busca
+        pilha: contém os índices buscados
+    
+    Returns:
+        Lista com os índices correspondentes a query
+    '''
     if not(' ') in texto:
         if not('(') in texto:
             if texto == "and" or texto == "or":
                 return texto
-            palavras.append(texto)
             return buscaid(index, texto)
     
     a = sexpr_tokenize(texto)
     if len(a)==1:
         a = a[0].split()
-    # result = True
-    
+
     for e in a:
         e = re.sub('\)$', '', e)
         e = re.sub('^\(', '', e)
-        pilha.append(teste2(index, e, pilha))
+        pilha.append(busca(index, e, pilha))
 
     result = [pilha[0]]
     
@@ -123,24 +120,59 @@ def teste2(index, texto, pilha=[]):
             result[0] &= pilha[i+1]
         if word == 'or':
             result[0] |= pilha[i+1]
-    return result[0], palavras
+    return result[0]
 
-def ranking(corpus, corpus_mod, docids, palavras):
-# , repo, index, docids, palavras):
-    # Ranquear os documentos.
-    return(docids)
-    print(docids, palavras)
-    rank = {}
+def ranking(reuters, corpus, docids, palavras):
+    '''Cria um ranqueamento entre os textos da busca, sendo o primeiro o mais relevante
+
+    Args:
+        reuters: corpus vindo do nltk
+        corpus: dicionário contendo a relação entre índice e texto
+        docids: índices dos textos buscados
+        palavras: palavras tokenizadas da query
     
+    Returns:
+        Lista com todas os índices já ranqueados
+    '''
+    rank = {}
+    tc = TextCollection(reuters)
+
     for e in docids:
         rank[e]=0
         for i in palavras:
-            # print(corpus[e])
-            # print()
-            rank[e]+=TextCollection(corpus).tf_idf(i, corpus_mod[e])
+            rank[e]+=tc.tf_idf(i, corpus[e])
+
     rank = {k: v for k, v in reversed(sorted(rank.items(), key=lambda item: item[1]))}
     return rank.keys()
-    # return list(docids)  # dummy por enquanto.
+
+
+def tokens_palavras(texto):
+    '''Tokeniza o texto da query
+
+    Args:
+        texto: texto da query
+    
+    Returns:
+        Lista com todas as palavras da query sem as palavras reservadas
+    '''
+    palavras = []
+    for word in word_tokenize(texto):
+        if not (word == "(" or word == ")" or word == "and" or word == "or"):
+            palavras.append(word)
+    return palavras
+
+def docid_to_text(docids, corpus):
+    '''Mostra texto(s) correspondentes aos docids.
+
+    Args:
+        docids: contém todos os índices correspondentes à busca
+        corpus: dicionario que mapeia um docid para uma string contendo o
+                documento completo.
+    '''
+    for docid in docids:
+        print(f'docid: {docid}')
+        print(f'{corpus[docid]}' )
+        print('-------------------------------------------------------------')
 
 def main():
     parser = ArgumentParser()
@@ -160,10 +192,10 @@ def main():
     with open(args.corpus, 'r') as file:
         corpus = json.load(file)
     
-    docids, palavras = teste2(index, args.query)
-    print(ranking(reuters, corpus, docids, palavras))
-    # print(TextCollection(reuters).idf("the"))
-    # print([i.idf('asian') for i in TextCollection(reuters)])
+    docids = busca(index, args.query)
+    palavras = tokens_palavras(args.query)
+    docid_to_text(ranking(reuters, corpus, docids, palavras), corpus)
+
 
 if __name__ == '__main__':
     main()

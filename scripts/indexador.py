@@ -18,12 +18,10 @@ def create_repo(corpus):
     '''
 
     sw = stopwords.words('english')+['.', ',', '\'s', '(', ')', 'n\'t', '``', ';', ':']
-    print(sw)
     doc_ids={}
     for docid, text in corpus.items():
         doc_ids[docid]=[]
         for word in word_tokenize(text):
-            
             if word.lower() not in sw:
                 if word.lower() not in doc_ids[docid]:
                     doc_ids[docid].append(word.lower())
